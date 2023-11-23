@@ -1,0 +1,9 @@
+<div>
+  <h3>Libros</h3>
+  <p>Ingrese el titulo: <input type="text" [(ngModel)]="libro"></p>
+  Nombre Titulos:
+  <ul>
+<li *ngFor="let libro of arrayLibros">{{libro}}</li>
+  </ul>
+<button (click)="agregarLibros()">Añadir</button>
+</div>

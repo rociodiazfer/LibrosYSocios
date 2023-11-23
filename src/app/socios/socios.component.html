@@ -1,0 +1,9 @@
+<div>
+  <h3>Socios</h3>
+  <p>Ingrese el codigo: <input type="text" [(ngModel)]="numero"></p>
+  <table border="1">
+    <thead><tr>Codigos:</tr></thead>
+    <tr *ngFor="let numero of arrayNumeros"><td>{{numero}}</td></tr>
+  </table>
+  <button (click)="agregarNumeros()">Añadir</button>
+</div>
